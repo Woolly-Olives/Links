@@ -408,11 +408,104 @@
         </div>
 
         <!-- Section 2: Study Resources -->
-        <div data-content-id="2" class="h-full flex flex-col">
-            <h3 class="text-lg font-bold text-slate-800 mb-4">Harvard Referencing Guide</h3>
-            <object data="University-of-Leicester-Author-Date-Harvard.pdf" type="application/pdf" class="w-full flex-grow min-h-[500px] border border-slate-200 rounded-xl shadow-sm">
-                <p class="p-4 text-slate-600">Your browser cannot display the PDF natively. <a href="University-of-Leicester-Author-Date-Harvard.pdf" class="text-blue-600 underline" download>Click here to download it</a>.</p>
-            </object>
+        <div data-content-id="2" class="h-full flex flex-col gap-6">
+            
+            <!-- Deadlines Table -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col flex-shrink-0">
+                <div class="px-6 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                        <i class="ph ph-calendar-check text-emerald-500"></i> Important Links & Deadlines
+                    </h3>
+                    <a href="Links deadlines1.xlsx" download class="text-sm bg-emerald-100 text-emerald-700 hover:bg-emerald-200 px-4 py-2 rounded-full font-bold transition-colors flex items-center gap-2 shadow-sm">
+                        <i class="ph ph-download-simple"></i> Download Excel
+                    </a>
+                </div>
+                <div class="overflow-x-auto max-h-[400px]">
+                    <table class="w-full text-sm text-left text-slate-600 relative">
+                        <thead class="text-xs text-slate-700 uppercase bg-slate-100 sticky top-0 shadow-sm z-10">
+                            <tr>
+                                <th scope="col" class="px-6 py-4 font-bold">Module / Item</th>
+                                <th scope="col" class="px-6 py-4 font-bold">Description</th>
+                                <th scope="col" class="px-6 py-4 font-bold">Deadline</th>
+                                <th scope="col" class="px-6 py-4 font-bold">Links / Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 bg-white">
+                            <!-- Sample Rows: Replace with your actual data from the Excel file -->
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-slate-900">BS1030</td>
+                                <td class="px-6 py-4">Example Lab Report</td>
+                                <td class="px-6 py-4 font-semibold text-red-600">Friday, Week 4</td>
+                                <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Submission Link</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-medium text-slate-900">BS1040</td>
+                                <td class="px-6 py-4">Mid-term Assessment</td>
+                                <td class="px-6 py-4 font-semibold text-red-600">Monday, Week 6</td>
+                                <td class="px-6 py-4">Check Blackboard for details</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors bg-amber-50">
+                                <td class="px-6 py-8 text-center text-slate-600" colspan="4">
+                                    <i class="ph ph-info text-2xl text-amber-500 mb-2 block"></i>
+                                    <strong>Note:</strong> Please replace these dummy rows in the HTML with the actual data from your <em>Links deadlines1.xlsx</em> file.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Harvard Referencing PDF & Text Fallback -->
+            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex-grow flex flex-col min-h-[700px]">
+                <div class="px-6 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                        <i class="ph ph-book-open text-purple-500"></i> Harvard Referencing Guide
+                    </h3>
+                    <a href="University-of-Leicester-Author-Date-Harvard.pdf" download class="text-sm bg-purple-100 text-purple-700 hover:bg-purple-200 px-4 py-2 rounded-full font-bold transition-colors flex items-center gap-2 shadow-sm">
+                        <i class="ph ph-download-simple"></i> Download PDF
+                    </a>
+                </div>
+                
+                <div class="flex-grow w-full h-full relative flex flex-col md:flex-row bg-slate-100">
+                    
+                    <!-- PDF Viewer -->
+                    <div class="w-full md:w-1/2 h-[400px] md:h-full border-b md:border-b-0 md:border-r border-slate-200 relative bg-slate-200 flex flex-col">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-slate-500 z-0">
+                            <i class="ph ph-file-pdf text-6xl text-slate-300 mb-3"></i>
+                            <p class="text-sm">If the PDF does not load here automatically due to browser security, please use the text version on the right or download the file.</p>
+                        </div>
+                        <object data="University-of-Leicester-Author-Date-Harvard.pdf" type="application/pdf" class="w-full h-full relative z-10" title="Harvard Referencing Guide">
+                            <embed src="University-of-Leicester-Author-Date-Harvard.pdf" type="application/pdf" class="w-full h-full" />
+                        </object>
+                    </div>
+
+                    <!-- HTML Text Fallback (Created from the text you provided!) -->
+                    <div class="w-full md:w-1/2 h-[400px] md:h-full overflow-y-auto p-6 md:p-8 bg-white">
+                        <h4 class="text-2xl font-bold text-slate-800 mb-4 border-b border-slate-200 pb-3">Text Version (Fallback)</h4>
+                        <p class="font-semibold text-slate-600 mb-6">University of Leicester Author-Date (Harvard) Referencing Style Guide</p>
+                        
+                        <h5 class="text-lg font-bold mt-4 mb-2 text-purple-700">Introduction</h5>
+                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">The Author-date (Harvard) system is comprised of 2 elements: in-text citation and a bibliography at the end of the document. In the text of an assignment ideas taken from other people are indicated by placing the author's surname and the date of publication in brackets, for example (Joyner, 2013).</p>
+                        
+                        <h5 class="text-lg font-bold mt-6 mb-2 text-purple-700">Citations Within the Text</h5>
+                        <ul class="list-disc pl-5 mb-6 text-sm text-slate-600 space-y-2">
+                            <li><strong>In-text citations with an author:</strong> If the author's name occurs naturally in the sentence the year is given in brackets, for example: <em>In a recent study Chakraborti (2010) argued that...</em></li>
+                            <li><strong>Two or three authors:</strong> <em>Bartram and Monforte (2014) have proposed that...</em></li>
+                            <li><strong>More than three authors:</strong> use et al. <em>Beck et al. (2008) conclude that...</em></li>
+                            <li><strong>Without an author:</strong> <em>In the film Citizen Kane (1941) the main character...</em></li>
+                            <li><strong>Quotations:</strong> When quoting directly, always indicate page numbers. <em>(Bell, 2010, p.250)</em></li>
+                        </ul>
+
+                        <h5 class="text-lg font-bold mt-6 mb-3 text-purple-700">Bibliographies (Examples)</h5>
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 text-sm font-mono text-slate-700 space-y-4">
+                            <p><strong>Book:</strong><br> Gill, S. (2012) <em>Global crises and the crisis of global leadership.</em> Cambridge: Cambridge University Press.</p>
+                            <p><strong>Journal:</strong><br> Goodwin, J. (2009) 'Whatever happened to the young workers?', <em>Journal of Education and Work</em>, 22(5), pp. 417-431.</p>
+                            <p><strong>Website:</strong><br> Met Office (2014) <em>A global perspective on the recent storms</em>. Available at: http://www.metoffice.gov.uk (Accessed: 10 May 2014).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
         <!-- Section 3: Customising Degree -->
